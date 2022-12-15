@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!-- home section starts -->
+     <title>Home Page</title>
+     <link rel="stylesheet" type="text/css" href="Style.css">
+  </head>
+  <body>
+    <header>
+        <a href="#" class="MARK">Mark</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Info</a></li>
+        </ul>
+    </header>
+    <section>
+      <img src="stars.png" id="stars">
+      <img src="moon.png" id="moon">
+      <img src="ibg.png" id="ibg">
+      <h2 id="text">Hi Welcome</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="bg.png" id="bg">
+    </section>
+    <div class="sec" id="sec">
+      <h2>HI WELCOME! <br><br> This is my first website</h2>
+      <p>This contains the requirements given. <br><br>There is a "Explore button" </p>
+    </div>
+    <!-- home sections ends -->
+
+    <script>
+      let stars = document.getElementById('stars');
+      let moon = document.getElementById('moon');
+      let ibg = document.getElementById('ibg');
+      let text = document.getElementById('text;');
+      let btn = document.getElementById('btn');
+      let bg = document.getElementById('bg');
+      let header = document.querySelector('header');
+
+      window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        ibg.style.top = value * 0.5 + 'px';
+        bg.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 10 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+      })
+    </script>
+    <!-- about section starts -->
+    <section class="about" id='about'>
+      <h1 class="heading"> <span> about </span> us </h1>
+
+      <div class="row">
+
+        <div class="video-container">
+          <video src="bo.mp4" loop autoplay muted> </video>
+          <h3>hehi</h3>
+        </div>
+
+        <div class="content">
+          <h3>Hi!</h3>
+          <p>nakatikim ka na ba ng tigdalawang pisong takoyaki? Dito sa Taguig City matatagpuan ang isang tindahan ng abot-kayang takoyaki! Tatlong klase ang palaman ng takoyaki nila rito: mayroong may gulay, cheese, at ang best-seller nila na may palamang hatdog.Ayon kay ate, aabot sa dalawang libung pirasong takoyaki nagagawa nila kada araw. Piniprito ang takoyaki nila rito at may sawsawan na suka o yung matamis na sauce.</p> 
+             <a href="#" class="btn">Back to top</a>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- gallery starts here -->
+    <div class="sec" id="sec">
+      <h2>Gallery <br><br> This is my alternative pictures</h2>
+      <p>I can not find anny of my pictures so i come up with this. <br><br> Gifs </p>
+    </div>
+    <div class="gallery">
+      <div class="gal">
+        <img src="pngwing.com.png" width="100%;">
+      </div>
+
+      <div class="gal">
+        <img src="pngwing.com (1).png" width="100%;">
+      </div>
+
+      <div class="gal">
+        <img src="pngwing.com (2).png" width="100%;">
+      </div>
+
+      <div class="gal">
+        <img src="pngwing.com (3).png" width="100%;">
+      </div>
+
+      <div class="gal">
+        <img src="2b.gif" width="100%;">
+      </div>
+
+      <div class="gal">
+        <img src="vg.gif" width="100%;">
+      </div>
+
+      <div class="gal">
+        <img src="bz.gif" width="100%;">
+      </div>
+    </div>
+    <!-- gallery ends here -->
+ </body>
+</html>

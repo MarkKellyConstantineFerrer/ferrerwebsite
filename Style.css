@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900,&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055,#7597de);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .MARK
+{
+    color: antiquewhite;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li 
+{
+    list-style: none;
+    margin-left: 20px;
+}        
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: antiquewhite;
+    border-radius: 20px;
+}
+header ul li a:hover, 
+header ul li a.active
+{
+    background: antiquewhite;
+    color: #2b1055;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#moon
+{
+    mix-blend-mode: screen;
+}
+section img#bg
+{
+    z-index: 10;
+}
+#text
+{
+    position: absolute;
+    right: -350px;
+    color: antiquewhite;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: antiquewhite;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #a46eb1;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: antiquewhite;
+}
+.sec p
+{
+    font-size: 1.5em;
+    color: antiquewhite;
+}
+.heading
+{
+    text-align: center;
+    font-size: 4rem;
+    color: antiquewhite;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+.heading span
+{
+    color:var(--violet);
+}
+.heading
+{
+    font-size: 3rem;
+}
+.about .row
+{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .video-container
+{
+    flex:1 1 40rem;
+    position: relative;
+}
+.about .row .video-container video
+{
+    width: 100%;
+    border:1.5rem solid transparent;
+    border-radius: .5rem ;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: 100%;
+    object-fit: cover;
+}
+.about .row .video-container h3
+{
+    position: absolute;
+    top:50; transform: translateY(-50%);
+    font-size: 3rem;
+    background: #2b1055;
+    width:100%;
+    padding:1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+.about .row .content
+{
+    flex:1 1 40rem;
+}
+.about .row .content h3
+{
+    font-size: 3rem;
+    color: #333;
+}
+.about .row .content p
+{
+    font-size: 1.5rem;
+    color: antiquewhite;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+.icons-container
+{
+    background: #a46eb1;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.icons-container .icons-container
+{
+    background: antiquewhite;
+    border:.1rem solid rgba(0, 0, 0, .1);
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    flex: 1, 1, 25rem;
+}
+*
+{
+    box-sizing: border-box;
+}
+.gal
+{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.gallery::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
